@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Data and artifacts
+data/*.csv
+data/*.zip
+artifacts/
+
+# Model outputs
+*.joblib
+*.pkl
+
+# Logs
+*.log
+
+# Environment files
+.env
