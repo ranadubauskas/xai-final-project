@@ -197,7 +197,7 @@ def main() -> None:
     ensure_dir(ARTIFACT_DIR)
 
     print("Loading data...")
-    df = pd.read_csv(DATA_PATH, nrows=100_000)
+    df = pd.read_csv(DATA_PATH, low_memory=False)
 
     print(f"Original shape: {df.shape}")
 

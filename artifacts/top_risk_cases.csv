@@ -1,0 +1,4 @@
+Start_Lat,Start_Lng,Distance(mi),Temperature(F),Wind_Chill(F),Humidity(%),Pressure(in),Visibility(mi),Wind_Speed(mph),Precipitation(in),hour_sin,hour_cos,month,dayofweek,is_weekend,State,Timezone,Weather_Condition,Wind_Direction,Sunrise_Sunset,Civil_Twilight,Nautical_Twilight,Astronomical_Twilight,Junction,Traffic_Signal,Crossing,Stop,Give_Way,Railway,Roundabout,Amenity,Bump,Station,y_true,y_prob,y_pred
+41.65936,-87.66256,0.0,69.0,69.0,91.0,29.24,10.0,5.0,0.0,-0.25881904510252157,0.9659258262890681,6.0,5.0,1,IL,US/Central,Partly Cloudy,S,Night,Night,Night,Night,1,0,0,0,0,0,0,0,0,0,1,0.9560421,1
+33.753634999999996,-84.495628,0.0,45.0,,97.0,29.87,10.0,,,-0.2588190451025208,-0.9659258262890683,11.0,5.0,1,GA,US/Eastern,Overcast,Calm,Day,Day,Day,Day,0,0,0,0,0,0,0,0,0,0,1,0.9454062,1
+39.088322,-84.792076,5.9000000953674325,-5.1,-15.8,80.0,30.47,10.0,4.6,,1.0,6.123233995736766e-17,1.0,3.0,0,KY,US/Eastern,Clear,SSW,Night,Night,Night,Day,0,0,0,0,0,0,0,0,0,0,1,0.9444971,1

@@ -22,7 +22,6 @@ Thumbs.db
 # Data and artifacts
 data/*.csv
 data/*.zip
-artifacts/
 
 # Model outputs
 *.joblib
