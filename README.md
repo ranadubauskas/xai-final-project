@@ -166,41 +166,41 @@ artifacts/xgb_pipeline.joblib
 
 This allows users to inspect or reuse the trained model without retraining from scratch.
 
-
 ## Results
 
-*All images and artifacts can be found in the artifacts folder.*
+*All images and artifacts can be found in the `artifacts/` folder.*
 
-The current XGBoost model shows strong ranking performance and good probability calibration on the accident severity prediction task.
+The final XGBoost model shows strong predictive performance, improved ranking quality over the earlier run, and good overall calibration on the high-severity accident prediction task.
 
 ### Quantitative Results
 
 | Metric | Value |
 |---|---:|
-| ROC-AUC | 0.8611 |
-| PR-AUC | 0.6220 |
-| F1 | 0.5267 |
-| Precision | 0.6885 |
-| Recall | 0.4265 |
-| Brier Score | 0.1078 |
-| ECE | 0.0082 |
+| ROC-AUC | 0.8885 |
+| PR-AUC | 0.6866 |
+| F1 | 0.5794 |
+| Precision | 0.7385 |
+| Recall | 0.4767 |
+| Brier Score | 0.0977 |
+| ECE | 0.0216 |
 
 ### Analysis
 
-- The model achieves a **ROC-AUC of 0.8611**, indicating strong ability to distinguish higher-severity from lower-severity accidents.
-- The **PR-AUC of 0.6220** is useful because the positive class is not dominant, so precision-recall performance is important.
-- The model has **high precision (0.6885)** but more moderate **recall (0.4265)**, meaning it is relatively conservative: when it predicts high severity, it is often correct, but it misses some high-severity cases.
-- The **Brier score (0.1078)** and **ECE (0.0082)** indicate that predicted probabilities are well calibrated.
+- The model achieves a **ROC-AUC of 0.8885**, indicating strong ability to distinguish higher-severity from lower-severity accidents.
+- The **PR-AUC of 0.6866** shows solid precision-recall performance for the positive class.
+- The model maintains **high precision (0.7385)** with improved **recall (0.4767)**, meaning it is still somewhat conservative but identifies more true high-severity cases than the earlier run.
+- The **Brier score (0.0977)** indicates strong probability quality overall.
+- The **ECE (0.0216)** is still low, suggesting that predicted probabilities remain reasonably well calibrated, although calibration is slightly worse than in the earlier smaller-sample run.
 
 ### Reliability Diagram
 
-The reliability diagram shows that predicted probabilities track observed outcome frequencies closely, with the calibration curve staying near the diagonal. This suggests the model’s confidence estimates are reliable.
+The reliability diagram shows that predicted probabilities continue to track observed frequencies closely overall. The calibration curve stays near the diagonal, with some overestimation in the mid-to-high probability range, but the model still produces probabilities that are fairly reliable for decision support.
 
 ![Reliability Diagram](artifacts/reliability_diagram.png)
 
 ### SHAP Summary Plot
 
-The SHAP summary plot highlights which features most strongly influence the model’s predictions. The most important features include accident distance, longitude, latitude, traffic signal presence, wind chill, weather condition, and crossing-related indicators. The plot below provides a global explanation of model behavior across the evaluation sample. Top global SHAP features include `Distance(mi)`, `Start_Lng`, `Start_Lat`, `Traffic_Signal`, `Wind_Chill(F)`, `Weather_Condition_Fair`, and `Crossing`. :contentReference[oaicite:0]{index=0}
+The SHAP summary plot highlights which features most strongly influence the model’s predictions. The most important global features are `Distance(mi)`, `Start_Lat`, `Start_Lng`, `Wind_Chill(F)`, `Traffic_Signal`, `Weather_Condition_Fair`, and `Crossing`. Additional influential features include time-based variables such as `hour_sin`, `month`, `hour_cos`, and `dayofweek`, as well as roadway-context variables such as `Stop`, `Station`, and `Junction`. :contentReference[oaicite:0]{index=0}
 
 ![SHAP Summary Plot](artifacts/shap_summary.png)
 
@@ -208,31 +208,34 @@ The SHAP summary plot highlights which features most strongly influence the mode
 
 A few representative high-confidence predictions from the test set include:
 
-| State | Distance (mi) | Weather | Junction | Traffic Signal | y_true | y_prob | y_pred |
-|---|---:|---|---:|---:|---:|---:|---:|
-| IL | 0.000 | Partly Cloudy | 1 | 0 | 1 | 0.9560 | 1 |
-| GA | 0.000 | Overcast | 0 | 0 | 1 | 0.9454 | 1 |
-| KY | 5.900 | Clear | 0 | 0 | 1 | 0.9445 | 1 |
+| State | Distance (mi) | Weather | Junction | Traffic Signal | Crossing | y_true | y_prob | y_pred |
+|---|---:|---|---:|---:|---:|---:|---:|---:|
+| IL | 0.332 | Overcast | 0 | 1 | 1 | 1 | 0.9749 | 1 |
+| IL | 0.000 | Cloudy | 1 | 1 | 1 | 1 | 0.9748 | 1 |
+| IL | 0.552 | Overcast | 0 | 0 | 0 | 1 | 0.9743 | 1 |
 
-These examples show that the model can assign very high predicted probabilities to true high-severity accidents under certain roadway, weather, and temporal conditions.
+These examples show that the model can assign very high predicted probabilities to true high-severity accidents under certain combinations of roadway context, weather conditions, and temporal patterns. :contentReference[oaicite:1]{index=1}
 
 ### Key Takeaways
 
-- The model performs well overall and is especially strong at ranking accident severity risk.
-- Calibration is a major strength: predicted probabilities appear trustworthy for decision support.
-- Spatial variables and roadway-context indicators are among the strongest drivers of prediction.
-- SHAP improves interpretability by showing how environmental, location-based, and roadway-related features influence severity predictions.
+- The full-data run improves on the earlier subset-based run across **ROC-AUC, PR-AUC, F1, precision, recall, and Brier score**.
+- The model is particularly strong at **ranking severity risk** and still produces **reasonably calibrated probabilities**.
+- **Transportation and roadway-context features** such as traffic signals, crossings, stops, and junction indicators contribute meaningfully to predictions.
+- **Environmental and temporal factors** such as wind chill, weather condition, month, and time-of-day patterns also influence severity predictions.
+- SHAP improves interpretability by showing which transportation, environmental, spatial, and temporal features are most associated with high-severity outcomes.
 
 ### Interpretation
 
 From the SHAP importance output, the strongest contributors to the model’s prediction of whether an accident is high severity are:
-1. **Length of Roadway Affected by the Accident:** `Distance (mi)`
-2. **Spatial Location:** `Start_Lng` & `Start_Lat`
-3. **Roadway Context:** `Traffic_Signal`, `Crossing`, `Stop`, `Junction`
-4. **Time-related Features:** `hour_sin`, `hour_cos`, `dayofweek`, `month`
-5. **Regional Indicators:** state features such as `CA`, `SC`, and `GA` appear among the top drivers.
 
-The SHAP analysis shows that the model’s severity predictions are influenced by a mix of transportation, environmental, temporal, and spatial factors. The most important global features include incident distance, latitude, longitude, traffic-signal presence, crossing-related indicators, wind chill, weather condition, pressure, temperature, and time-based variables. This indicates that the model is not relying on a single signal, but instead incorporates roadway context, environmental conditions, and timing effects when estimating severity risk. For non-AI users such as transportation planners, these explanations make the model more transparent by showing which factors are associated with elevated risk and how roadway and environmental conditions may contribute to more severe accidents.
+1. **Length of roadway affected by the accident:** `Distance(mi)`
+2. **Spatial location:** `Start_Lat` and `Start_Lng`
+3. **Environmental conditions:** `Wind_Chill(F)` and weather-condition features
+4. **Roadway context:** `Traffic_Signal`, `Crossing`, `Stop`, and `Junction`
+5. **Time-related features:** `hour_sin`, `hour_cos`, `month`, and `dayofweek`
+6. **Regional indicators:** state features such as `CA`, `SC`, `GA`, and `IL`
+
+The SHAP results show that the model’s severity predictions are influenced by a mix of transportation, environmental, temporal, and spatial factors. In particular, roadway-control features, weather-related variables, and timing effects all appear among the most important drivers, which supports the project goal of using explainable AI to understand how transportation and environmental context relate to accident severity. At the same time, the strong influence of spatial variables suggests that geographic patterns are also an important part of the model’s predictive signal. Top SHAP features from the final run include `Distance(mi)`, `Start_Lat`, `Start_Lng`, `Wind_Chill(F)`, `Traffic_Signal`, `Weather_Condition_Fair`, `Crossing`, `hour_sin`, `month`, and `State_CA`. :contentReference[oaicite:2]{index=2}
 
 ## Common Issues
 

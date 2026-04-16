@@ -1,192 +1,259 @@
 feature,mean_abs_shap
-num__Distance(mi),0.7207244
-num__Start_Lng,0.29257858
-num__Start_Lat,0.2869907
-bool__Traffic_Signal,0.1848739
-num__Wind_Chill(F),0.1729716
-cat__Weather_Condition_Fair,0.13472028
-bool__Crossing,0.12178696
-num__hour_sin,0.11459823
-cat__State_CA,0.107100755
-num__Pressure(in),0.09820933
-num__dayofweek,0.0944503
-num__month,0.094260775
-cat__State_SC,0.08860119
-num__hour_cos,0.088280596
-num__Temperature(F),0.07909864
-num__Wind_Speed(mph),0.06448414
-num__Humidity(%),0.05001726
-cat__State_GA,0.040554672
-bool__Stop,0.03824056
-bool__Station,0.034231864
-cat__Weather_Condition_Clear,0.033460204
-cat__Weather_Condition_Overcast,0.030317059
-bool__Junction,0.029534405
-cat__Weather_Condition_Cloudy,0.025894633
-cat__State_IL,0.021259647
-num__Visibility(mi),0.021198656
-cat__State_CO,0.020847663
-cat__Wind_Direction_Calm,0.018861068
-cat__State_TX,0.018112728
-cat__State_VA,0.017180067
-cat__State_PA,0.014746219
-cat__State_MN,0.014586438
-cat__State_OK,0.01334042
-cat__State_NC,0.013207037
-cat__Wind_Direction_missing,0.013090954
-cat__Timezone_US/Central,0.013056822
-bool__Amenity,0.011884355
-num__Precipitation(in),0.011082622
-cat__Civil_Twilight_Night,0.010604775
-cat__State_FL,0.009356077
-cat__State_WA,0.009174851
-cat__Civil_Twilight_Day,0.009075255
-cat__State_WI,0.0086116325
-cat__Wind_Direction_North,0.0085307155
-cat__State_NJ,0.008322548
-num__is_weekend,0.008276084
-cat__Nautical_Twilight_Night,0.008010782
-cat__Weather_Condition_Scattered Clouds,0.00776482
-cat__Astronomical_Twilight_Night,0.0075776833
-cat__State_MO,0.0071351975
-cat__State_LA,0.007093302
-cat__Astronomical_Twilight_Day,0.0068081766
-cat__State_MI,0.006792334
-cat__Wind_Direction_West,0.0067701247
-cat__Wind_Direction_SW,0.006703955
-cat__Timezone_US/Pacific,0.0065701418
-cat__Nautical_Twilight_Day,0.006310487
-cat__Weather_Condition_Partly Cloudy,0.0061749835
-cat__Weather_Condition_Light Rain,0.0061515095
-cat__Wind_Direction_ESE,0.006134198
-cat__Wind_Direction_SSE,0.00613255
-cat__Sunrise_Sunset_Day,0.0057155057
-cat__Weather_Condition_Light Snow,0.0054583494
-cat__State_MD,0.005158306
-cat__State_OR,0.0050109643
-cat__State_CT,0.0049023554
-cat__Wind_Direction_N,0.004872466
-cat__Wind_Direction_S,0.004691107
-cat__State_NY,0.0046170405
-cat__Wind_Direction_South,0.004584966
-cat__Wind_Direction_W,0.004427368
-cat__Wind_Direction_E,0.004410027
-cat__State_AL,0.0043608793
-cat__Weather_Condition_Mostly Cloudy,0.0043046256
-cat__Weather_Condition_missing,0.0042641475
-bool__Railway,0.0039721704
-cat__State_TN,0.0038993878
-cat__Wind_Direction_NNE,0.0037583995
-cat__State_IN,0.0034378292
-cat__Wind_Direction_VAR,0.003431886
-cat__Wind_Direction_ENE,0.0032739819
-cat__Wind_Direction_East,0.00324765
-cat__Wind_Direction_Variable,0.003215818
-cat__Sunrise_Sunset_Night,0.0032002395
-cat__Wind_Direction_SSW,0.0031384318
-cat__State_OH,0.0030275967
-cat__Wind_Direction_NW,0.0030059263
-cat__Timezone_US/Eastern,0.0029782478
-cat__State_KY,0.0029636144
-cat__Wind_Direction_WNW,0.0028065331
-cat__Wind_Direction_SE,0.0027455622
-cat__Wind_Direction_WSW,0.0024735776
-cat__Wind_Direction_NE,0.0022779317
-cat__Wind_Direction_NNW,0.0022250596
-cat__Timezone_US/Mountain,0.0020922853
-cat__State_NH,0.0020352143
-cat__State_AR,0.0019925374
-cat__State_NE,0.001990611
-cat__State_WV,0.0018864556
-cat__State_NV,0.0018542378
-cat__State_RI,0.001786589
-cat__State_AZ,0.0016613012
-cat__State_NM,0.0016059746
-cat__Wind_Direction_CALM,0.0015750566
-cat__State_UT,0.0013995197
-cat__State_DC,0.0012891717
-cat__Weather_Condition_Heavy Rain,0.0011288249
-cat__State_IA,0.0010951149
-bool__Give_Way,0.001025106
-cat__Weather_Condition_Snow,0.000980606
-cat__Weather_Condition_Haze,0.0008558172
-cat__Weather_Condition_Partly Cloudy / Windy,0.0008039448
-cat__Weather_Condition_Rain,0.0007710913
-cat__Weather_Condition_Fog,0.00074814307
-cat__Weather_Condition_Wintry Mix,0.0007109307
-cat__State_DE,0.0006665488
-cat__State_MS,0.00058408594
-cat__Weather_Condition_Thunder,0.00053272117
-cat__Weather_Condition_Light Thunderstorms and Rain,0.0004589795
-cat__Weather_Condition_Cloudy / Windy,0.00043687635
-cat__Weather_Condition_Fair / Windy,0.0004116538
-cat__State_KS,0.00040553985
-cat__Sunrise_Sunset_missing,0.0004034577
-cat__Weather_Condition_Light Freezing Rain,0.00039098947
-cat__Weather_Condition_Mostly Cloudy / Windy,0.00023529913
-cat__Weather_Condition_T-Storm,0.00021543437
-cat__Weather_Condition_Heavy T-Storm,0.00021027749
-cat__Civil_Twilight_missing,0.00020353709
-cat__Weather_Condition_Thunderstorms and Rain,0.00018705157
-cat__State_MA,0.00018392169
-cat__Timezone_missing,0.0001821142
-cat__State_ID,0.00016219146
-cat__Weather_Condition_Light Rain / Windy,0.00015742547
-cat__Weather_Condition_Thunder in the Vicinity,0.00014502507
-cat__Nautical_Twilight_missing,0.00012580589
-cat__Weather_Condition_Heavy Thunderstorms and Rain,0.000115901974
-cat__Weather_Condition_Patches of Fog,0.000100903235
-cat__State_MT,9.0303634e-05
-cat__Weather_Condition_Light Drizzle,8.8542365e-05
-cat__Weather_Condition_Drizzle,8.421996e-05
-cat__Weather_Condition_Smoke,5.68574e-05
-bool__Bump,5.6485158e-05
-cat__Weather_Condition_Heavy Snow,3.776517e-05
-cat__Weather_Condition_Shallow Fog,3.7594007e-05
-cat__Weather_Condition_Thunderstorm,3.682159e-05
-cat__Weather_Condition_Heavy T-Storm / Windy,9.7304455e-06
-cat__Astronomical_Twilight_missing,0.0
-bool__Roundabout,0.0
-cat__Weather_Condition_Light Sleet,0.0
-cat__Weather_Condition_Wintry Mix / Windy,0.0
-cat__Weather_Condition_Drizzle / Windy,0.0
+num__Distance(mi),0.67912984
+num__Start_Lat,0.31419313
+num__Start_Lng,0.30017298
+num__Wind_Chill(F),0.2106706
+bool__Traffic_Signal,0.16197519
+cat__Weather_Condition_Fair,0.14782868
+bool__Crossing,0.11842495
+num__hour_sin,0.11409234
+num__month,0.100672424
+cat__State_CA,0.098961666
+cat__State_SC,0.079340115
+num__hour_cos,0.078556724
+num__Pressure(in),0.070224784
+num__dayofweek,0.065488406
+num__Wind_Speed(mph),0.049177464
+bool__Stop,0.04037531
+cat__State_GA,0.040053297
+bool__Station,0.03570367
+cat__Weather_Condition_Clear,0.032697883
+bool__Junction,0.03248594
+num__is_weekend,0.028093234
+cat__State_IL,0.024467584
+num__Temperature(F),0.024455408
+cat__State_CO,0.023438584
+cat__Weather_Condition_Cloudy,0.02087547
+cat__Weather_Condition_Overcast,0.020619994
+cat__State_NC,0.018209778
+cat__State_PA,0.017881483
+cat__State_MN,0.017514724
+cat__Timezone_US/Pacific,0.01692982
+cat__State_VA,0.016057601
+cat__Wind_Direction_missing,0.015972452
+num__Humidity(%),0.015296097
+bool__Amenity,0.014018494
+cat__State_TX,0.013838144
+cat__State_FL,0.013432331
+cat__State_WA,0.013121117
+cat__State_MI,0.012621844
+cat__State_LA,0.011533147
+cat__State_NJ,0.011182585
+num__Precipitation(in),0.009432915
+cat__State_MD,0.008446472
+cat__Wind_Direction_Calm,0.008311779
+cat__State_OK,0.00823417
+cat__Timezone_US/Eastern,0.0075986884
+cat__State_WI,0.007361301
+cat__Nautical_Twilight_Day,0.007226399
+cat__State_MO,0.0070403144
+cat__State_OR,0.0070399977
+cat__State_IN,0.006469686
+num__Visibility(mi),0.00635979
+cat__Weather_Condition_Scattered Clouds,0.0058485256
+cat__Wind_Direction_North,0.0058103176
+cat__Astronomical_Twilight_Day,0.005585384
+cat__State_AL,0.0055183587
+cat__Timezone_US/Central,0.005444336
+cat__State_CT,0.00518077
+cat__State_NY,0.005145871
+cat__State_OH,0.004830558
+cat__State_NE,0.0044415197
+cat__Nautical_Twilight_Night,0.004184894
+cat__Wind_Direction_West,0.0037507457
+cat__State_AZ,0.00358207
+cat__Wind_Direction_S,0.0033283597
+cat__State_KY,0.0033144974
+cat__Wind_Direction_W,0.003101328
+bool__Railway,0.0029681665
+cat__State_AR,0.002902812
+cat__State_IA,0.0026573462
+cat__Astronomical_Twilight_Night,0.0025397653
+cat__State_TN,0.0024744945
+cat__State_UT,0.0024129725
+cat__State_WV,0.0022590044
+cat__State_NV,0.001963256
+cat__Weather_Condition_Mostly Cloudy,0.001886164
+cat__State_KS,0.00188332
+cat__Timezone_US/Mountain,0.001882444
+cat__State_MS,0.001872504
+cat__State_DC,0.0018381199
+cat__Weather_Condition_Fog,0.0017307318
+cat__Weather_Condition_Light Rain,0.0016330451
+cat__Wind_Direction_N,0.0015957388
+cat__Wind_Direction_VAR,0.0015354714
+cat__Wind_Direction_East,0.00138715
+cat__Civil_Twilight_Day,0.001360539
+cat__Wind_Direction_South,0.00129725
+cat__State_DE,0.001242154
+cat__State_NM,0.0012320945
+cat__Weather_Condition_missing,0.0012213212
+cat__Sunrise_Sunset_Day,0.001169105
+cat__Weather_Condition_Fair / Windy,0.0011140016
+cat__State_NH,0.0011095944
+cat__Sunrise_Sunset_Night,0.0010834854
+cat__Weather_Condition_Light Snow,0.00096287497
+cat__Weather_Condition_Partly Cloudy,0.00086565
+bool__Give_Way,0.0008510045
+cat__State_ND,0.00061299274
+cat__Wind_Direction_CALM,0.0005731187
+cat__Weather_Condition_Wintry Mix,0.00052869285
+cat__State_RI,0.00051916594
+cat__Civil_Twilight_Night,0.000452387
+cat__State_MA,0.00043122357
+cat__Wind_Direction_E,0.000428091
+cat__State_MT,0.00036220255
+cat__Sunrise_Sunset_missing,0.00025567433
+cat__State_WY,0.0002547358
+cat__Weather_Condition_Smoke,0.00022917011
+bool__Roundabout,0.00018633722
+cat__Wind_Direction_ESE,0.00015210574
+cat__Weather_Condition_Light Freezing Rain,0.00015064681
+cat__Wind_Direction_NW,0.00014124224
+cat__Wind_Direction_SSE,0.00013175704
+bool__Bump,0.00012976983
+cat__Wind_Direction_WSW,0.00012636663
+cat__Wind_Direction_SW,0.00010322574
+cat__Wind_Direction_SE,9.740171e-05
+cat__Wind_Direction_ENE,9.226376e-05
+cat__Wind_Direction_SSW,9.143804e-05
+cat__Wind_Direction_WNW,8.044888e-05
+cat__Wind_Direction_Variable,8.032199e-05
+cat__Civil_Twilight_missing,7.7362034e-05
+cat__Wind_Direction_NNW,7.387083e-05
+cat__State_ID,7.023764e-05
+cat__Weather_Condition_Drizzle,5.5509085e-05
+cat__Wind_Direction_NNE,5.462733e-05
+cat__Wind_Direction_NE,4.627416e-05
+cat__Nautical_Twilight_missing,3.2907505e-05
+cat__Timezone_missing,3.1359596e-05
+cat__State_ME,2.7222228e-05
+cat__Weather_Condition_Snow,2.3860863e-05
+cat__Weather_Condition_Light Drizzle,2.3073095e-05
+cat__Weather_Condition_N/A Precipitation,2.2491238e-05
+cat__Weather_Condition_Heavy T-Storm,2.1678425e-05
+cat__Weather_Condition_Rain,2.0470401e-05
+cat__Weather_Condition_Haze,1.9596157e-05
+cat__Weather_Condition_Heavy Rain,1.6030468e-05
+cat__State_SD,1.5801317e-05
+cat__Weather_Condition_Cloudy / Windy,7.426196e-06
+cat__Weather_Condition_Light Snow / Windy,7.0848846e-06
+cat__Weather_Condition_T-Storm,4.8563243e-06
+cat__Weather_Condition_Mostly Cloudy / Windy,3.521938e-06
+cat__Weather_Condition_Heavy Snow,3.2002151e-06
+cat__Weather_Condition_Snow / Windy,2.8415805e-06
+cat__Weather_Condition_Heavy Thunderstorms and Rain,2.3381313e-06
+cat__Weather_Condition_Light Ice Pellets,2.1388119e-06
+cat__State_VT,2.0225452e-06
+cat__Weather_Condition_Thunderstorm,1.5704913e-06
+cat__Weather_Condition_Smoke / Windy,1.4711834e-06
+cat__Weather_Condition_Mist,1.2846559e-06
+cat__Weather_Condition_Light Rain with Thunder,1.2083186e-06
+cat__Weather_Condition_Thunder in the Vicinity,1.1916317e-06
+cat__Weather_Condition_Light Rain / Windy,1.0402258e-06
+cat__Weather_Condition_Blowing Snow,9.2624595e-07
+cat__Weather_Condition_Patches of Fog,7.78114e-07
+cat__Weather_Condition_Rain / Windy,6.292836e-07
+cat__Weather_Condition_Heavy Snow / Windy,5.5562276e-07
+cat__Weather_Condition_Light Thunderstorms and Rain,4.5246276e-07
+cat__Weather_Condition_Haze / Windy,3.2144425e-07
+cat__Weather_Condition_Showers in the Vicinity,3.1551522e-07
+cat__Weather_Condition_Fog / Windy,2.9754347e-07
+cat__Weather_Condition_Partly Cloudy / Windy,2.3566389e-07
+cat__Weather_Condition_Hail,0.0
+cat__Weather_Condition_Blowing Snow Nearby,0.0
+cat__Weather_Condition_Light Fog,0.0
 cat__Weather_Condition_Light Freezing Drizzle,0.0
-cat__Weather_Condition_Ice Pellets,0.0
-cat__Weather_Condition_Heavy Snow / Windy,0.0
-cat__Weather_Condition_Heavy Rain / Windy,0.0
-cat__Weather_Condition_Haze / Windy,0.0
-cat__Weather_Condition_Freezing Rain,0.0
-cat__Weather_Condition_Fog / Windy,0.0
-cat__Weather_Condition_Drizzle and Fog,0.0
-cat__Weather_Condition_Blowing Snow / Windy,0.0
-cat__Weather_Condition_Widespread Dust,0.0
-cat__Weather_Condition_Blowing Snow,0.0
-cat__Weather_Condition_Blowing Dust / Windy,0.0
-cat__Weather_Condition_Blowing Dust,0.0
-cat__State_WY,0.0
-cat__State_VT,0.0
-cat__State_SD,0.0
-cat__State_ND,0.0
-cat__State_ME,0.0
+cat__Weather_Condition_Drifting Snow,0.0
 cat__Weather_Condition_Light Freezing Fog,0.0
 cat__Weather_Condition_Light Freezing Rain / Windy,0.0
-cat__Weather_Condition_Light Ice Pellets,0.0
+cat__Weather_Condition_Light Hail,0.0
+cat__Weather_Condition_Light Haze,0.0
+cat__Weather_Condition_Drifting Snow / Windy,0.0
 cat__Weather_Condition_Light Rain Shower,0.0
+cat__Weather_Condition_Light Blowing Snow,0.0
+cat__Weather_Condition_Light Rain Shower / Windy,0.0
+cat__Weather_Condition_Light Rain Showers,0.0
+cat__Weather_Condition_Light Sleet,0.0
+cat__Weather_Condition_Drizzle / Windy,0.0
+cat__Weather_Condition_Drizzle and Fog,0.0
+cat__Weather_Condition_Light Sleet / Windy,0.0
+cat__Weather_Condition_Funnel Cloud,0.0
+cat__Weather_Condition_Light Snow Grains,0.0
+cat__Weather_Condition_Dust Whirls,0.0
+cat__Weather_Condition_Light Snow Shower,0.0
+cat__Weather_Condition_Light Drizzle / Windy,0.0
+cat__Weather_Condition_Partial Fog,0.0
+cat__Weather_Condition_Wintry Mix / Windy,0.0
+cat__Weather_Condition_Ice Pellets,0.0
+cat__Weather_Condition_Heavy Drizzle,0.0
+cat__Weather_Condition_Heavy Freezing Drizzle,0.0
+cat__Weather_Condition_Heavy Freezing Rain,0.0
+cat__Weather_Condition_Heavy Freezing Rain / Windy,0.0
+cat__Weather_Condition_Heavy Ice Pellets,0.0
+cat__Weather_Condition_Heavy Rain / Windy,0.0
+cat__Weather_Condition_Heavy Rain Shower,0.0
+cat__Weather_Condition_Heavy Rain Shower / Windy,0.0
+cat__Weather_Condition_Heavy Rain Showers,0.0
+cat__Astronomical_Twilight_missing,0.0
+cat__Weather_Condition_Heavy Sleet,0.0
+cat__Weather_Condition_Heavy Sleet / Windy,0.0
+cat__Weather_Condition_Heavy Sleet and Thunder,0.0
+cat__Weather_Condition_Heavy Smoke,0.0
+cat__Weather_Condition_Heavy Snow with Thunder,0.0
+cat__Weather_Condition_Heavy T-Storm / Windy,0.0
+cat__Weather_Condition_Heavy Thunderstorms and Snow,0.0
+cat__Weather_Condition_Blowing Dust,0.0
+cat__Weather_Condition_Heavy Thunderstorms with Small Hail,0.0
+cat__Weather_Condition_Blowing Dust / Windy,0.0
+cat__Weather_Condition_Blowing Sand,0.0
+cat__Weather_Condition_Blowing Snow / Windy,0.0
+cat__Weather_Condition_Light Snow Shower / Windy,0.0
+cat__Weather_Condition_Widespread Dust / Windy,0.0
+cat__Weather_Condition_Widespread Dust,0.0
+cat__Weather_Condition_Light Thunderstorms and Snow,0.0
+cat__Weather_Condition_Low Drifting Snow,0.0
+cat__Weather_Condition_Small Hail,0.0
+cat__Weather_Condition_Sleet and Thunder,0.0
+cat__Weather_Condition_Sleet / Windy,0.0
+cat__Weather_Condition_Heavy Blowing Snow,0.0
+cat__Weather_Condition_Shallow Fog / Windy,0.0
+cat__Weather_Condition_Shallow Fog,0.0
+cat__Weather_Condition_Freezing Drizzle,0.0
+cat__Weather_Condition_Sand / Dust Whirlwinds / Windy,0.0
+cat__Weather_Condition_Sand / Dust Whirlwinds,0.0
+cat__Weather_Condition_Sand / Dust Whirls Nearby,0.0
+cat__Weather_Condition_Sand,0.0
+cat__Weather_Condition_Rain and Sleet,0.0
+cat__Weather_Condition_Rain Showers,0.0
+cat__Weather_Condition_Rain Shower / Windy,0.0
+cat__Weather_Condition_Rain Shower,0.0
+cat__Weather_Condition_Mist / Windy,0.0
+cat__Weather_Condition_Freezing Rain / Windy,0.0
+cat__Weather_Condition_Patches of Fog / Windy,0.0
+cat__Weather_Condition_Freezing Rain,0.0
+cat__Weather_Condition_Light Thunderstorm,0.0
+cat__Weather_Condition_Light Snow with Thunder,0.0
+cat__Weather_Condition_Snow Grains,0.0
+cat__Weather_Condition_Thunder / Wintry Mix,0.0
+cat__Weather_Condition_Volcanic Ash,0.0
 cat__Weather_Condition_Tornado,0.0
+cat__Weather_Condition_Thunderstorms and Snow,0.0
+cat__Weather_Condition_Thunderstorms and Rain,0.0
+cat__Weather_Condition_Light Snow Showers,0.0
+cat__Weather_Condition_Light Snow and Sleet,0.0
+cat__Weather_Condition_Thunder and Hail / Windy,0.0
+cat__Weather_Condition_Thunder and Hail,0.0
+cat__Weather_Condition_Thunder / Wintry Mix / Windy,0.0
 cat__Weather_Condition_Thunder / Windy,0.0
+cat__Weather_Condition_Snow Showers,0.0
+cat__Weather_Condition_Thunder,0.0
 cat__Weather_Condition_T-Storm / Windy,0.0
+cat__Weather_Condition_Light Snow and Sleet / Windy,0.0
+cat__Weather_Condition_Squalls / Windy,0.0
+cat__Weather_Condition_Squalls,0.0
+cat__Weather_Condition_Snow and Thunder / Windy,0.0
+cat__Weather_Condition_Snow and Thunder,0.0
 cat__Weather_Condition_Snow and Sleet / Windy,0.0
 cat__Weather_Condition_Snow and Sleet,0.0
-cat__Weather_Condition_Snow / Windy,0.0
-cat__Weather_Condition_Smoke / Windy,0.0
-cat__Weather_Condition_Small Hail,0.0
 cat__Weather_Condition_Sleet,0.0
-cat__Weather_Condition_Showers in the Vicinity,0.0
-cat__Weather_Condition_Rain Showers,0.0
-cat__Weather_Condition_Rain / Windy,0.0
-cat__Weather_Condition_N/A Precipitation,0.0
-cat__Weather_Condition_Mist,0.0
-cat__Weather_Condition_Light Snow and Sleet,0.0
-cat__Weather_Condition_Light Snow / Windy,0.0
-cat__Weather_Condition_Light Rain with Thunder,0.0
-cat__Weather_Condition_Light Drizzle / Windy,0.0

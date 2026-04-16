@@ -36,7 +36,7 @@ from xgboost import XGBClassifier
 DATA_PATH = "data/US_Accidents_March23.csv"
 ARTIFACT_DIR = "artifacts"
 RANDOM_STATE = 42
-SAMPLE_SIZE = 100_000   # lower for debugging / laptop memory
+SAMPLE_SIZE = None   # lower for debugging / laptop memory
 TEST_SIZE = 0.2
 
 TARGET_COL = "high_severity"   # derived from Severity >= 3
