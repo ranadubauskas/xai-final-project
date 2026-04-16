@@ -24,7 +24,6 @@ data/*.csv
 data/*.zip
 
 # Model outputs
-*.joblib
 *.pkl
 
 # Logs
